@@ -1,0 +1,38 @@
+  /* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
+body {
+    margin: 0;
+    line-height: normal;
+      font-family: 'Montserrat', sans-serif;
+  }
+  @font-face {
+    font-family: "Caslon Titling MT Std";
+    src: url("/assets/fonts/Caslon\ Titling\ MT\ Std\ Regular.otf");
+    font-weight: 400;
+}
+
+  :root {
+    /* fonts */
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-caslon-titling-mt-std: "Caslon Titling MT Std";
+  
+    /* font sizes */
+    --font-size-5xl: 24px;
+    --font-size-7xl: 26px;
+    --font-size-lg: 18px;
+    --font-size-27xl: 40px;
+    --font-size-9xl: 28px;
+    --font-size-mid: 17px;
+    --font-size-base: 16px;
+  
+    /* Colors */
+    --color-white: #fff;
+    --color-darkslateblue: #572d6a;
+    --color-dimgray: #707070;
+    --color-darkgoldenrod: #bf922a;
+  
+    /* Border radiuses */
+    --br-5xs: 8px;
+  }
+
+  
+  

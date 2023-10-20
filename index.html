@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <!-- <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
+        <div class="container position-relative my-2">
+            <a class="navbar-brand" href="#">
+                <div class="prestige">PRESTIGE</div>
+                <div class="luxury">LUXURY</div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mt-5 mt-lg-0" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-2">
+                        <a class="nav-link active" aria-current="page" href="#">RESIDENTIAL</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">COMMERCIAL</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">SELL</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">RENT</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">SERVICES</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Banner Image -->
+    <section>
+        <div>
+            <img class="palmjumeira" alt="" src="./assets/images/banner.png" />
+        </div>
+    </section>
+    <!-- Search Box -->
+    <section>
+        <div class="position-relative">
+            <div class="position-absolute top-0 start-50 translate-middle col-12">
+                <div class="search-box p-4 text-center col-10 col-lg-8 offset-lg-2 offset-1">
+                    <h2 class="text-white title-font-size">Believe in finding it</h2>
+                    <h6 class="text-white search-subtitle-font-size">Search properties for sale and to rent</h6>
+                    <div class="row px-lg-5">
+                        <div class="col-md-8 col-12 px-1">
+                            <input class="form-control search-field mb-2" type="text" name="search-field"
+                                placeholder="e.g. ‘Dubai Marina’, ‘Arabian Ranches’, ‘Al Jaddaf’ ">
+                        </div>
+                        <div class="col-md-2 col-6 px-1">
+                            <button class="btn theme-button w-100" type="button">For Sale</button>
+                        </div>
+                        <div class="col-md-2 col-6 px-1">
+                            <button class="btn theme-button w-100" type="button">For Rent</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Placeholder -->
+    <div class="placeholder mb-5"></div>
+    <!-- What’s Happening in Your Area -->
+    <section class="container py-lg-5 py-4">
+        <div class="text-center mt-5 mt-lg-0">
+            <h2 class="title">What’s Happening in Your Area</h2>
+            <h6 class="subtitle">If you’re looking for a new home, an investment property or to explore the area we’ll
+                help you find exactly what you’re looking for.</h6>
+        </div>
+        <div class="box row py-lg-2 px-lg-5 mt-4 mx-1 mx-lg-0">
+            <div class="col-6 col-lg-3 text-center text-white p-lg-4 p-4">
+                <h4 class="font-size-xxl">954</h4>
+                <p class="font-size-sm">Homes For Sale</p>
+            </div>
+            <div class="col-6 col-lg-3 text-center text-white p-lg-4 p-4">
+                <h4 class="font-size-xxl">23</h4>
+                <p class="font-size-sm">Office For Sale</p>
+            </div>
+            <div class="col-6 col-lg-3 text-center text-white p-lg-4 p-4">
+                <h4 class="font-size-xxl">02</h4>
+                <p class="font-size-sm">Shop For Sale</p>
+            </div>
+            <div class="col-6 col-lg-3 text-center text-white p-lg-4 p-4">
+                <h4 class="font-size-xxl">53</h4>
+                <p class="font-size-sm">Studio For Sale</p>
+            </div>
+        </div>
+    </section>
+    <!-- Discover Our Featured Listings -->
+    <section class="container py-lg-5 py-4">
+        <div class="text-center mb-4">
+            <h2 class="title">Discover Our Featured Listings</h2>
+            <h6 class="subtitle">Take a deep dive and browse homes for sale, original neighborhood photos, resident
+                reviews and local insights to find what is right for you.</h6>
+        </div>
+
+        <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide d-flex justify-content-center">
+                        <div class="col-lg-10 col-12 row d-flex align-items-center py-4">
+                            <div class="col-12 col-lg-3 d-flex align-self-stretch">
+                                <img src="assets/images/p1.jpeg" class="w-100"
+                                    alt="Skyline View | Brand New | Luxury Furnished">
+                            </div>
+                            <div class="col-12 col-lg-6 card shadow-sm border-0 p-4 color-primary d-flex align-self-lg-stretch">
+                                <h6>Skyline View | Brand New | Luxury Furnished</h6>
+                                <div class="row">
+                                    <div class="col-1"><img class="icon-size" src="/assets/images/location-1.png"
+                                            alt="Area"></div>
+                                    <div class="col-8">
+                                        <p>Seven Palm, Palm Jumeirah</p>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col-1"><img class="icon-size" src="/assets/images/bed.png" alt="Area">
+                                    </div>
+                                    <div class="col-lg-4 col-5">
+                                        <p>BEDS</p>
+                                    </div>
+                                    <div class="col-lg-4 col-5">
+                                        <p>2</p>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col-1"><img class="icon-size" src="/assets/images/scale.png" alt="Area">
+                                    </div>
+                                    <div class="col-lg-4 col-5">
+                                        <p>AREA (SQFT)</p>
+                                    </div>
+                                    <div class="col-lg-4 col-5">
+                                        <p>352 SQFT</p>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col-1"><img class="icon-size" src="/assets/images/money.png" alt="Area">
+                                    </div>
+                                    <div class="col-lg-4 col-5">
+                                        <p>PRICE</p>
+                                    </div>
+                                    <div class="col-lg-4 col-5">
+                                        <p>AED 115,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3 d-flex align-self-stretch">
+                                <img src="assets/images/palm.png" class="w-100 object-fit-none"
+                                    alt="Skyline View | Brand New | Luxury Furnished">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide d-flex justify-content-center">
+                        <div class="col-lg-10 col-12 row d-flex align-items-center py-4">
+                            <div class="col-12 col-lg-3 d-flex align-self-stretch">
+                                <img src="assets/images/p2.jpeg" class="w-100"
+                                    alt="Downtown City Views | Upgraded | Vacant">
+                            </div>
+                            <div class="col-12 col-lg-6 card shadow-sm border-0 p-4 color-primary d-flex align-self-lg-stretch">
+                                <h6>Downtown City Views | Upgraded | Vacant</h6>
+                                <div class="row">
+                                    <div class="col-1"><img class="icon-size" src="/assets/images/location-1.png"
+                                            alt="Area"></div>
+                                    <div class="col-8">
+                                        <p>The Residences, Downtown Dubai</p>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col-1"><img class="icon-size" src="/assets/images/bed.png" alt="Area">
+                                    </div>
+                                    <div class="col-lg-4 col-5">
+                                        <p>BEDS</p>
+                                    </div>
+                                    <div class="col-lg-4 col-5">
+                                        <p>3</p>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col-1"><img class="icon-size" src="/assets/images/scale.png" alt="Area">
+                                    </div>
+                                    <div class="col-lg-4 col-5">
+                                        <p>AREA (SQFT)</p>
+                                    </div>
+                                    <div class="col-lg-4 col-5">
+                                        <p>2380 SQFT</p>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col-1"><img class="icon-size" src="/assets/images/money.png" alt="Area">
+                                    </div>
+                                    <div class="col-lg-4 col-5">
+                                        <p>PRICE</p>
+                                    </div>
+                                    <div class="col-lg-4 col-5">
+                                        <p>AED 5,800,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3 d-flex align-self-stretch">
+                                <img src="assets/images/downtown.png" class="w-100 object-fit-none"
+                                    alt="owntown City Views | Upgraded | Vacant">
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Add more slides as needed -->
+                </ul>
+            </div>
+           
+
+        </section>
+        <!-- <div class="col-12 row d-flex align-items-center">
+            <div class="col-3">
+                <img src="assets/images/p1.jpeg" class="w-100" alt="Skyline View | Brand New | Luxury Furnished">
+            </div>
+            <div class="col-4 card shadow-sm border-0 p-4 color-primary d-flex align-self-lg-stretch">
+                <h6>Skyline View | Brand New | Luxury Furnished</h6>
+                <div class="row">
+                    <div class="col-1"><img class="icon-size" src="/assets/images/location-1.png" alt="Area"></div>
+                    <div class="col-8">
+                        <p>Seven Palm, Palm Jumeirah</p>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-1"><img class="icon-size" src="/assets/images/bed.png" alt="Area"></div>
+                    <div class="col-4">
+                        <p>BEDS</p>
+                    </div>
+                    <div class="col-4">
+                        <p>2</p>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-1"><img class="icon-size" src="/assets/images/scale.png" alt="Area"></div>
+                    <div class="col-4">
+                        <p>AREA (SQFT)</p>
+                    </div>
+                    <div class="col-4">
+                        <p>352 SQFT</p>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-1"><img class="icon-size" src="/assets/images/money.png" alt="Area"></div>
+                    <div class="col-4">
+                        <p>PRICE</p>
+                    </div>
+                    <div class="col-4">
+                        <p>AED 115,000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="assets/images/palm.png" class="w-100" alt="Skyline View | Brand New | Luxury Furnished">
+            </div>
+        </div> -->
+    </section>
+    <!-- Top Pick Listing of the Week -->
+    <section class="container py-lg-5 py-4">
+        <div class="text-center mb-4">
+            <h2 class="title">Top Pick Listing of the Week</h2>
+            <h6 class="subtitle">Explore Our Weekly Selection of Premium Properties for Your Ideal Investment or Living
+                Space.</h6>
+        </div>
+        <div class="box row py-lg-2 px-lg-5 mt-4">
+            <div class="col-12 col-lg-5 text-white p-lg-4 p-3">
+                <div class="position-relative">
+                    <img src="assets/images/p3.jpeg" alt="Penthouse" width="100%">
+                    <img class="position-absolute top-100 start-50 translate-middle d-none d-lg-block" src="assets/images/p4.jpeg"
+                        alt="Penthouse" width="70%">
+                </div>
+            </div>
+            <div class="col-12 col-lg-7 text-white p-lg-4 p-3">
+                <h4 class="font-size-xl lh-base">Prestige Luxury Real Estate are proud to present The Penthouse </h4>
+                <p class="font-size-sm lh-base">This one-of-a-kind architectural masterpiece of a building, designed by
+                    the legendary Dame Zaha Hadid, is an icon of the Burj Kalifa district. This completely unique
+                    residence occupies 12,788 sq ft at the pinnacle of The Opus building and fits seamlessly with Zaha
+                    Hadid’s visionary masterpiece that is The Opus.</p>
+                <div class="row my-5">
+                    <div class="col-lg-4 col-6 mb-4">
+                        <h6>Budget</h6>
+                        <p>AED 100,000,000</p>
+                    </div>
+                    <div class="col-lg-4 col-6 mb-4">
+                        <h6>Location</h6>
+                        <p>The Opus, Business Bay</p>
+                    </div>
+                    <div class="col-lg-4 col-6 mb-4">
+                        <h6>Type</h6>
+                        <p>Penthouse</p>
+                    </div>
+                    <div class="col-lg-4 col-6 mb-4">
+                        <h6>Size</h6>
+                        <p>12,788 sqft</p>
+                    </div>
+                    <div class="col-lg-4 col-6 mb-4">
+                        <h6>Bedrooms</h6>
+                        <p>4</p>
+                    </div>
+                    <div class="col-lg-4 col-6 mb-4">
+                        <h6>Bathrooms</h6>
+                        <p>5</p>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center mt-2">
+                        <button class="btn secondary-button w-50" type="button">YES! I WANT BOOK </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-lg-5 py-4 px-lg-5">
+        <div class="row px-lg-5">
+            <div class="col-12 col-lg-6">
+                <h2 class="title">Register with us for an <br class="d-none d-lg-block"> exclusive updates!</h2>
+                <h6 class="font-size-20 lh-base">Be the first to know about new listings,<br class="d-none d-lg-block"> market insights, and exclusive offers <br class="d-none d-lg-block"> tailored just for you.</h6>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="card border-0 shadow p-4">
+                    <div class="col-12 row">
+                        <div class="col-md-6 col-12 px-1 mb-3">
+                            <input class="form-control border-theme search-field" type="text" name="first-name"
+                                placeholder="First Name">
+                        </div>
+                        <div class="col-md-6 col-12 px-1 mb-3">
+                            <input class="form-control border-theme search-field" type="text" name="last-name"
+                                placeholder="Last Name">
+                        </div>
+                        <div class="col-md-12 col-12 px-1 mb-3">
+                            <input class="form-control border-theme search-field" type="text" name="email"
+                                placeholder="Email Address">
+                        </div>
+                        <div class="col-md-12 col-12 px-1 mb-3">
+                            <button class="btn theme-button w-100" type="button">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid py-lg-5 py-4 px-lg-5 background-primary">
+        <div class="row px-lg-5 g-0">
+            <div class="col-12 col-lg-2 d-flex align-items-center justify-content-center p-0 my-4 my-2">
+                <a href="./">
+                    <img src="assets/images/logo_footer.png" class="w-100" alt="">
+                </a>
+            </div>
+            <div class="col-12 col-lg-4"></div>
+            <div class="col-12 col-lg-3 mb-2">
+                <h6 class="text-white font-size-md">Quick Links</h6>
+                <div class="row">
+                    <div class="col-6 col-lg-12">
+                        <a class="footer_link" href="./">Careers</a>
+                    </div>
+                    <div class="col-6 col-lg-12">
+                        <a class="footer_link" href="./">Blog</a>
+                    </div>
+                    <div class="col-6 col-lg-12">
+                        <a class="footer_link" href="./">Privacy Policy</a>
+                    </div>
+                    <div class="col-6 col-lg-12">
+                        <a class="footer_link" href="./">Terms and Conditions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 mb-2">
+                <h6 class="text-white font-size-md">Contact Us</h6>
+                <a class="footer_link" target="_blank" href="https://www.google.com/maps/place/Prestige+Luxury+Real+Estate/@25.0754024,55.1372503,17z/data=!3m2!4b1!5s0x3e5f13551d79ef85:0x663c69ea38055b46!4m6!3m5!1s0x3e5f6caafde397cb:0x3f96047665b8da10!8m2!3d25.0753976!4d55.1398252!16s%2Fg%2F11b63rhqjh?entry=ttu"><img src="assets/images/location_footer.png" alt="Location" width="20px" class="me-2">Office 1604 Marina Plaza</a>
+                <a class="footer_link" target="_blank" href="tel:+971523702269"><img src="assets/images/phone.png" alt="Call" width="20px" class="me-2">+971 52 370 2269</a>
+                <a class="footer_link" target="_blank" href="tel:+97144468300"><img src="assets/images/calls.png" alt="Call" width="20px" class="me-2">+971 4 446 8300</a>
+                <a class="footer_link" target="_blank" href="mailto:nfo@prestigeluxury.ae"><img src="assets/images/email.png" alt="Email" width="20px" class="me-2">info@prestigeluxury.ae</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('.splide', {
+                arrows: true, // Enable arrows
+                pagination: false, // Disable default pagination
+            }).mount();
+        });
+    </script>
+
+</body>
+
+</html>
